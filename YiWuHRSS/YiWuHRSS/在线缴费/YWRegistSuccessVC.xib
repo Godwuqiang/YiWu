@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWRegistSuccessVC">
+            <connections>
+                <outlet property="negativeButton" destination="sIG-od-etC" id="wuF-Ye-naL"/>
+                <outlet property="positveButton" destination="mEh-kF-yZA" id="29g-6a-7Fa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56M-YN-jZt">
+                    <rect key="frame" x="0.0" y="311" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIG-od-etC">
+                            <rect key="frame" x="20" y="0.0" width="157.5" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="否">
+                                <color key="titleColor" red="0.99215686270000003" green="0.71764705880000002" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonClick:" destination="-1" eventType="touchUpInside" id="K3c-um-kPP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-kF-yZA">
+                            <rect key="frame" x="197.5" y="0.0" width="157.5" height="45"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.71764705880000002" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="是">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="positiveButtonClick:" destination="-1" eventType="touchUpInside" id="bUn-zl-ICC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mEh-kF-yZA" firstAttribute="top" secondItem="56M-YN-jZt" secondAttribute="top" id="5dN-oP-m7X"/>
+                        <constraint firstAttribute="bottom" secondItem="sIG-od-etC" secondAttribute="bottom" id="For-hm-sbD"/>
+                        <constraint firstAttribute="height" constant="45" id="Gar-uG-RVW"/>
+                        <constraint firstAttribute="bottom" secondItem="mEh-kF-yZA" secondAttribute="bottom" id="PYh-lU-Smz"/>
+                        <constraint firstItem="sIG-od-etC" firstAttribute="leading" secondItem="56M-YN-jZt" secondAttribute="leading" constant="20" id="edI-6U-HoS"/>
+                        <constraint firstItem="sIG-od-etC" firstAttribute="top" secondItem="56M-YN-jZt" secondAttribute="top" id="p5u-y7-1EP"/>
+                        <constraint firstAttribute="trailing" secondItem="mEh-kF-yZA" secondAttribute="trailing" constant="20" id="pT5-kl-VrP"/>
+                        <constraint firstItem="sIG-od-etC" firstAttribute="width" secondItem="56M-YN-jZt" secondAttribute="width" multiplier="0.42" id="q3d-Cw-FnV"/>
+                        <constraint firstItem="mEh-kF-yZA" firstAttribute="width" secondItem="sIG-od-etC" secondAttribute="width" id="sLg-Yt-J8v"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参保成功！是否进入在线缴费？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWq-r6-PRg">
+                    <rect key="frame" x="10" y="240" width="355" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gha-oB-eRz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-nk-hxv">
+                    <rect key="frame" x="162.5" y="170" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Npv-5X-wfc"/>
+                        <constraint firstAttribute="width" constant="50" id="ezG-VO-UR0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKJ-C9-MYM">
+                    <rect key="frame" x="10" y="436" width="355" height="62.5"/>
+                    <string key="text">备注：
+参保成功后，您可以选择通过支付宝完成在线缴费。若您不使用“在线缴费”功能，则请您到相关银行柜台签订大病保险委托扣款协议。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="56M-YN-jZt" secondAttribute="trailing" id="90j-e9-Ryk"/>
+                <constraint firstAttribute="trailing" secondItem="pWq-r6-PRg" secondAttribute="trailing" constant="10" id="GYx-pF-d08"/>
+                <constraint firstItem="Moh-nk-hxv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pkj-ul-OBg"/>
+                <constraint firstItem="pWq-r6-PRg" firstAttribute="top" secondItem="Moh-nk-hxv" secondAttribute="bottom" constant="20" id="YwJ-1a-f7r"/>
+                <constraint firstAttribute="trailing" secondItem="yKJ-C9-MYM" secondAttribute="trailing" constant="10" id="Z8b-FV-rYl"/>
+                <constraint firstItem="pWq-r6-PRg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aVR-II-dWO"/>
+                <constraint firstItem="56M-YN-jZt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="acW-rw-cb8"/>
+                <constraint firstItem="yKJ-C9-MYM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="eUS-hG-Ckk"/>
+                <constraint firstItem="56M-YN-jZt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lNR-IS-nzn"/>
+                <constraint firstItem="yKJ-C9-MYM" firstAttribute="top" secondItem="56M-YN-jZt" secondAttribute="bottom" constant="80" id="v2e-br-x79"/>
+                <constraint firstItem="56M-YN-jZt" firstAttribute="top" secondItem="pWq-r6-PRg" secondAttribute="bottom" constant="50" id="ySP-q0-IsR"/>
+                <constraint firstItem="56M-YN-jZt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yhg-ui-zkX"/>
+            </constraints>
+            <point key="canvasLocation" x="53.5" y="148.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="success" width="52" height="52"/>
+    </resources>
+</document>

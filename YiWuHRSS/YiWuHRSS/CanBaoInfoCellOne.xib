@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CanBaoInfoCellOne" rowHeight="60" id="KGk-i7-Jjw" customClass="CanBaoInfoCellOne">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gaD-J8-ZpB">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="59"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="OyB-vs-nss">
+                        <rect key="frame" x="15" y="10" width="45" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="SDl-mf-R6c"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘美丽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-SL-Xax">
+                        <rect key="frame" x="75" y="19" width="49" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="sQI-vJ-YYP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡号：A12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW5-J6-MrL">
+                        <rect key="frame" x="139" y="22" width="110" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WlW-SL-Xax" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0cb-sZ-jTc"/>
+                    <constraint firstAttribute="bottom" secondItem="OyB-vs-nss" secondAttribute="bottom" constant="10" id="1HZ-lO-X09"/>
+                    <constraint firstItem="kW5-J6-MrL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="47j-hz-j52"/>
+                    <constraint firstItem="OyB-vs-nss" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9Ho-gq-wUm"/>
+                    <constraint firstItem="gaD-J8-ZpB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9lr-Zl-rm3"/>
+                    <constraint firstAttribute="trailing" secondItem="gaD-J8-ZpB" secondAttribute="trailing" id="EnI-BR-AN8"/>
+                    <constraint firstItem="WlW-SL-Xax" firstAttribute="leading" secondItem="OyB-vs-nss" secondAttribute="trailing" constant="15" id="Pn7-KT-UUd"/>
+                    <constraint firstItem="OyB-vs-nss" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aNj-nq-ump"/>
+                    <constraint firstAttribute="bottom" secondItem="gaD-J8-ZpB" secondAttribute="bottom" id="v1l-DH-9vh"/>
+                    <constraint firstItem="kW5-J6-MrL" firstAttribute="leading" secondItem="WlW-SL-Xax" secondAttribute="trailing" constant="15" id="vLX-Fu-1sl"/>
+                    <constraint firstItem="gaD-J8-ZpB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="x4F-3a-XcL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="402" y="164"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo1" width="77" height="77"/>
+    </resources>
+</document>

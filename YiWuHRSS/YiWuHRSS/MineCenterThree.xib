@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MineCenterThree" rowHeight="100" id="KGk-i7-Jjw" customClass="MineCenterThree">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCG-NA-pQg">
+                        <rect key="frame" x="15" y="10" width="85.5" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="5vZ-WO-EtD"/>
+                        </constraints>
+                        <state key="normal" image="icon_mymenu1"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZV-yX-AkM">
+                        <rect key="frame" x="140.5" y="10" width="86" height="45"/>
+                        <state key="normal" image="icon_mymenu3"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVe-wO-JQy">
+                        <rect key="frame" x="266.5" y="10" width="85.5" height="45"/>
+                        <state key="normal" image="icon_mymenu4"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实人认证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="784-AK-8Xz">
+                        <rect key="frame" x="29" y="65" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡支付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEo-p2-isN">
+                        <rect key="frame" x="148" y="65" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付密码设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bB-TK-qGl">
+                        <rect key="frame" x="266.5" y="65" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6ZV-yX-AkM" firstAttribute="width" secondItem="VCG-NA-pQg" secondAttribute="width" id="1Zx-LO-ZdY"/>
+                    <constraint firstAttribute="trailing" secondItem="tVe-wO-JQy" secondAttribute="trailing" constant="15" id="44d-ee-yhj"/>
+                    <constraint firstItem="tVe-wO-JQy" firstAttribute="leading" secondItem="6ZV-yX-AkM" secondAttribute="trailing" constant="40" id="57n-MF-DAG"/>
+                    <constraint firstItem="tVe-wO-JQy" firstAttribute="height" secondItem="VCG-NA-pQg" secondAttribute="height" id="6Yp-KH-kbD"/>
+                    <constraint firstItem="VCG-NA-pQg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7rn-rp-LM7"/>
+                    <constraint firstItem="tVe-wO-JQy" firstAttribute="top" secondItem="VCG-NA-pQg" secondAttribute="top" id="Kap-gT-7mR"/>
+                    <constraint firstItem="DEo-p2-isN" firstAttribute="centerX" secondItem="6ZV-yX-AkM" secondAttribute="centerX" id="LpD-ZN-9AK"/>
+                    <constraint firstItem="6ZV-yX-AkM" firstAttribute="top" secondItem="VCG-NA-pQg" secondAttribute="top" id="NW1-q3-feb"/>
+                    <constraint firstItem="tVe-wO-JQy" firstAttribute="width" secondItem="VCG-NA-pQg" secondAttribute="width" id="OKs-34-TDJ"/>
+                    <constraint firstItem="784-AK-8Xz" firstAttribute="top" secondItem="VCG-NA-pQg" secondAttribute="bottom" constant="10" id="XYg-ID-EcJ"/>
+                    <constraint firstItem="784-AK-8Xz" firstAttribute="centerX" secondItem="VCG-NA-pQg" secondAttribute="centerX" id="b9A-U8-ddv"/>
+                    <constraint firstItem="tVe-wO-JQy" firstAttribute="centerX" secondItem="3bB-TK-qGl" secondAttribute="centerX" id="fi8-Ni-jVB"/>
+                    <constraint firstItem="DEo-p2-isN" firstAttribute="top" secondItem="6ZV-yX-AkM" secondAttribute="bottom" constant="10" id="hbA-jg-NaI"/>
+                    <constraint firstItem="6ZV-yX-AkM" firstAttribute="height" secondItem="VCG-NA-pQg" secondAttribute="height" id="kr9-ZG-fnX"/>
+                    <constraint firstItem="6ZV-yX-AkM" firstAttribute="leading" secondItem="VCG-NA-pQg" secondAttribute="trailing" constant="40" id="lAh-Gf-cHx"/>
+                    <constraint firstItem="3bB-TK-qGl" firstAttribute="top" secondItem="tVe-wO-JQy" secondAttribute="bottom" constant="10" id="xxO-55-gzC"/>
+                    <constraint firstItem="VCG-NA-pQg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zUZ-lR-94d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BTN1" destination="VCG-NA-pQg" id="DGd-mN-Gep"/>
+                <outlet property="BTN2" destination="6ZV-yX-AkM" id="SLh-YT-MW7"/>
+                <outlet property="BTN3" destination="tVe-wO-JQy" id="DE0-X4-c9z"/>
+                <outlet property="LB1" destination="784-AK-8Xz" id="gA1-TK-8jl"/>
+                <outlet property="LB2" destination="DEo-p2-isN" id="Gyd-47-Hs2"/>
+                <outlet property="LB3" destination="3bB-TK-qGl" id="e2F-sn-8IE"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_mymenu1" width="28" height="28"/>
+        <image name="icon_mymenu3" width="28" height="28"/>
+        <image name="icon_mymenu4" width="28" height="28"/>
+    </resources>
+</document>

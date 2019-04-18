@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailThreeCell" rowHeight="80" id="KGk-i7-Jjw" customClass="DetailThreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TUu-fs-Ige">
+                        <rect key="frame" x="15" y="0.0" width="347" height="79.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">  义乌市365便民服务中心(简称“中心”)成立于2002年10月8日，是市政府集中多个职能部门，以窗口服务方式受理，履行相关行政许可职能和提供行政服务的办事机构，分综合管理层和窗口服务层两个层次设置。综合管理层为义乌市365便民服务中心管理委员会，是市政府派</string>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TUu-fs-Ige" secondAttribute="bottom" id="SHc-t7-Gps"/>
+                    <constraint firstAttribute="trailing" secondItem="TUu-fs-Ige" secondAttribute="trailing" constant="15" id="ZVT-HX-M0a"/>
+                    <constraint firstItem="TUu-fs-Ige" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ipg-H1-zUC"/>
+                    <constraint firstItem="TUu-fs-Ige" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wtS-Ns-gYf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Describe" destination="TUu-fs-Ige" id="3YW-MB-7xD"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="-98"/>
+        </tableViewCell>
+    </objects>
+</document>

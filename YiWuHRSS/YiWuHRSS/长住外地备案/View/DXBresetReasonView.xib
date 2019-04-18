@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DXBresetReasonView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5S-ep-lJF" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="485" width="375" height="182"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-M7-OaV">
+                            <rect key="frame" x="0.0" y="137" width="375" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Tyw-sk-uQw"/>
+                            </constraints>
+                            <state key="normal" title="    随直系亲属异地居住">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button3Click:" destination="iN0-l3-epB" eventType="touchUpInside" id="nTx-lm-rz9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygS-ND-mZd">
+                            <rect key="frame" x="0.0" y="92" width="375" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ZpE-jp-cyF"/>
+                            </constraints>
+                            <state key="normal" title="    户籍异地落户居住">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button2Click:" destination="iN0-l3-epB" eventType="touchUpInside" id="GJw-sw-Pta"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGL-Tb-LPk">
+                            <rect key="frame" x="0.0" y="47" width="375" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="AA9-Gk-Mbb"/>
+                            </constraints>
+                            <state key="normal" title="    回原籍居住">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button1Click:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mgc-qe-c9C"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="异地安置原因" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bh9-6N-HQI">
+                            <rect key="frame" x="107.5" y="0.0" width="160" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="78L-Ar-GmU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxc-s6-Nti" userLabel="closeButton">
+                            <rect key="frame" x="319" y="3" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8yQ-ba-fyQ"/>
+                                <constraint firstAttribute="width" constant="40" id="aFj-GF-3Ky"/>
+                            </constraints>
+                            <state key="normal" image="icon_close-1"/>
+                            <connections>
+                                <action selector="closeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ony-41-UJ8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJP-zI-OOR">
+                            <rect key="frame" x="0.0" y="46" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Ff2-fg-lrI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ygS-ND-mZd" firstAttribute="top" secondItem="iGL-Tb-LPk" secondAttribute="bottom" id="7HQ-YX-S4A"/>
+                        <constraint firstItem="iGL-Tb-LPk" firstAttribute="top" secondItem="DJP-zI-OOR" secondAttribute="bottom" id="8v0-Aw-KZp"/>
+                        <constraint firstAttribute="height" constant="182" id="AZM-Ee-CEN"/>
+                        <constraint firstItem="ZLa-M7-OaV" firstAttribute="leading" secondItem="j5S-ep-lJF" secondAttribute="leading" id="Bhe-RV-Q3m"/>
+                        <constraint firstItem="iGL-Tb-LPk" firstAttribute="top" secondItem="bh9-6N-HQI" secondAttribute="bottom" id="FRl-i5-Dx3"/>
+                        <constraint firstItem="bh9-6N-HQI" firstAttribute="centerX" secondItem="j5S-ep-lJF" secondAttribute="centerX" id="OOr-Y8-DpX"/>
+                        <constraint firstItem="iGL-Tb-LPk" firstAttribute="leading" secondItem="j5S-ep-lJF" secondAttribute="leading" id="Pmi-ia-cIP"/>
+                        <constraint firstItem="ygS-ND-mZd" firstAttribute="leading" secondItem="j5S-ep-lJF" secondAttribute="leading" id="RpB-Bd-ImB"/>
+                        <constraint firstAttribute="trailing" secondItem="ZLa-M7-OaV" secondAttribute="trailing" id="T1t-vh-JlW"/>
+                        <constraint firstAttribute="trailing" secondItem="Mxc-s6-Nti" secondAttribute="trailing" constant="16" id="Uzw-we-5Gb"/>
+                        <constraint firstAttribute="trailing" secondItem="DJP-zI-OOR" secondAttribute="trailing" id="VSp-5a-KqZ"/>
+                        <constraint firstItem="Mxc-s6-Nti" firstAttribute="centerY" secondItem="bh9-6N-HQI" secondAttribute="centerY" id="W6n-mO-2Mj"/>
+                        <constraint firstItem="bh9-6N-HQI" firstAttribute="top" secondItem="j5S-ep-lJF" secondAttribute="top" id="aEy-Im-lkB"/>
+                        <constraint firstAttribute="trailing" secondItem="iGL-Tb-LPk" secondAttribute="trailing" id="eZM-fx-eKF"/>
+                        <constraint firstAttribute="trailing" secondItem="ygS-ND-mZd" secondAttribute="trailing" id="rZ6-xK-huY"/>
+                        <constraint firstAttribute="bottom" secondItem="ZLa-M7-OaV" secondAttribute="bottom" id="wZs-rV-wiA"/>
+                        <constraint firstItem="ZLa-M7-OaV" firstAttribute="top" secondItem="ygS-ND-mZd" secondAttribute="bottom" id="whX-6n-HXy"/>
+                        <constraint firstItem="DJP-zI-OOR" firstAttribute="leading" secondItem="j5S-ep-lJF" secondAttribute="leading" id="y9I-BI-ehP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="j5S-ep-lJF" secondAttribute="trailing" id="3UO-mk-iKA"/>
+                <constraint firstItem="j5S-ep-lJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BSC-oz-bWY"/>
+                <constraint firstAttribute="bottom" secondItem="j5S-ep-lJF" secondAttribute="bottom" id="WtF-no-jMj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button1" destination="iGL-Tb-LPk" id="2vp-9N-3fU"/>
+                <outlet property="button2" destination="ygS-ND-mZd" id="AVK-mb-pcw"/>
+                <outlet property="button3" destination="ZLa-M7-OaV" id="tee-sr-feZ"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="-26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close-1" width="12" height="12"/>
+    </resources>
+</document>

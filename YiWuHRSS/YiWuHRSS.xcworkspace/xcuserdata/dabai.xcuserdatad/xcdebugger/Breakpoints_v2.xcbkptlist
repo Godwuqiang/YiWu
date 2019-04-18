@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/HomePageVC.m"
+            timestampString = "573382293.198267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1014"
+            endingLineNumber = "1014"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/XBFFWDController.m"
+            timestampString = "573729772.124422"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/NetListVC.m"
+            timestampString = "573709360.8735811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/YWRegistSuccessVC.m"
+            timestampString = "574051727.966413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-positiveButtonClick:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[YWRegistSuccessVC positiveButtonClick:]"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWRegistSuccessVC.m"
+                  timestampString = "577244181.689049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "1376">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[YWRegistSuccessVC positiveButtonClick:]_block_invoke"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWRegistSuccessVC.m"
+                  timestampString = "577244181.69178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWRegistSuccessVC.m"
+                  timestampString = "577244181.694533"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/YWRegistSuccessVC.m"
+            timestampString = "574051727.9669909"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-positiveButtonClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/YWQueryWIthYearVC.m"
+            timestampString = "576403589.293445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-searchRecord"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[YWQueryWIthYearVC searchRecord]"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWQueryWIthYearVC.m"
+                  timestampString = "577244181.707989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "1616">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[YWQueryWIthYearVC searchRecord]_block_invoke"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWQueryWIthYearVC.m"
+                  timestampString = "577244181.710731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.264"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/YWQueryWIthYearVC.m"
+                  timestampString = "577244181.7136019"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/YWQueryWIthYearVC.m"
+            timestampString = "576403589.293579"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "-searchRecord"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/&#x57ce;&#x4e61;&#x5c45;&#x6c11;&#x517b;&#x8001;/CityPeopleProvideVC.m"
+            timestampString = "576580438.053228"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-gotoPay"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/&#x5728;&#x7ebf;&#x7f34;&#x8d39;/&#x57ce;&#x4e61;&#x5c45;&#x6c11;&#x517b;&#x8001;/CityPeopleProvideVC.m"
+            timestampString = "576580438.053309"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "-gotoPay"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CityPeopleProvideVC gotoPay]"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/%E5%9F%8E%E4%B9%A1%E5%B1%85%E6%B0%91%E5%85%BB%E8%80%81/CityPeopleProvideVC.m"
+                  timestampString = "577244181.732264"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__30-[CityPeopleProvideVC gotoPay]_block_invoke"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/%E5%9F%8E%E4%B9%A1%E5%B1%85%E6%B0%91%E5%85%BB%E8%80%81/CityPeopleProvideVC.m"
+                  timestampString = "577244181.735019"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.217"
+                  moduleName = "YiWuHRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dabai/Downloads/%E9%A1%B9%E7%9B%AE%E4%BA%A4%E6%8E%A5_%E4%BE%AF%E6%96%B0%E5%85%B5/%E9%99%B6%E9%A3%9E%E4%BA%A4%E6%8E%A5/6.%E4%B9%89%E4%B9%8C%E5%B8%82%E6%B0%91%E5%8D%A1%E5%A4%87%E4%BB%BD20181221/YiWuHRSS/YiWuHRSS/%E5%9C%A8%E7%BA%BF%E7%BC%B4%E8%B4%B9/%E5%9F%8E%E4%B9%A1%E5%B1%85%E6%B0%91%E5%85%BB%E8%80%81/CityPeopleProvideVC.m"
+                  timestampString = "577244181.737712"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/ServiceTVC.m"
+            timestampString = "577012703.25493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
+            landmarkName = "-jzghBtnClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YiWuHRSS/LoginVC.m"
+            timestampString = "577009033.856683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-OnClickLoginBtn:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

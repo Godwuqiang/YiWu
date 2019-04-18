@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTFNoticeVC">
+            <connections>
+                <outlet property="agreeSelectButton" destination="fQ6-52-VVw" id="3BO-Jj-YJD"/>
+                <outlet property="agreedButton" destination="zjY-N7-JkX" id="BFD-1z-sXV"/>
+                <outlet property="noticeContentLabel" destination="8z8-AA-9mz" id="vWi-zy-tva"/>
+                <outlet property="selectButton" destination="fQ6-52-VVw" id="KkR-0i-D4n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z8-AA-9mz">
+                    <rect key="frame" x="15" y="79" width="345" height="251"/>
+                    <string key="text">须知内容：
+一、本市职工基本医疗保险退休人员方可办理异地安置备案手续；
+二、备案登记表须填写完整、准确；
+三、医保处二个工作日内审核待遇申请，审核通过后，待遇从申请当天开始；
+四、异地安置登记后两年之内不得解除。
+五、异地安置期间义乌市社会保障市民卡不能在义乌本地定点医疗机构使用，请选择适当日期申请，并谨慎填写结束时间；
+六、就医医院为县域内的医保定点医院，审核通过后若需更改医院请到医保处窗口办理；
+七、登记表与异地就医证历本可选择自取或邮寄。邮寄时收件人默认待遇享受人,收件地址默认安置地详细地址，请务必确保地址可寄达。邮寄费用由医保处承担。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfL-Ee-20Z">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ6-52-VVw">
+                            <rect key="frame" x="20" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="9qk-2j-ypO"/>
+                                <constraint firstAttribute="width" constant="30" id="NZO-TK-pEn"/>
+                            </constraints>
+                            <state key="normal" image="icon_select"/>
+                            <state key="selected" image="icon_select_on"/>
+                            <connections>
+                                <action selector="selectButtonClick:" destination="-1" eventType="touchUpInside" id="U3a-oC-Muj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本人承诺登记事项均为真实，由此产生的一切不良后果及责任由本人承担。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY4-li-NA8">
+                            <rect key="frame" x="60" y="10" width="295" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjY-N7-JkX">
+                            <rect key="frame" x="0.0" y="55" width="375" height="45"/>
+                            <color key="backgroundColor" red="0.99607843139999996" green="0.68627450980000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="2oN-t4-wiN"/>
+                            </constraints>
+                            <state key="normal" title="已阅读并同意承诺"/>
+                            <connections>
+                                <action selector="agreedButtonClick:" destination="-1" eventType="touchUpInside" id="oZa-H5-6BT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fQ6-52-VVw" firstAttribute="top" secondItem="bfL-Ee-20Z" secondAttribute="top" constant="10" id="A4y-tK-vVb"/>
+                        <constraint firstAttribute="bottom" secondItem="zjY-N7-JkX" secondAttribute="bottom" id="TMh-5C-UnQ"/>
+                        <constraint firstItem="fQ6-52-VVw" firstAttribute="leading" secondItem="bfL-Ee-20Z" secondAttribute="leading" constant="20" id="axp-Uo-0wy"/>
+                        <constraint firstAttribute="trailing" secondItem="zjY-N7-JkX" secondAttribute="trailing" id="dKn-Hy-L35"/>
+                        <constraint firstItem="zjY-N7-JkX" firstAttribute="leading" secondItem="bfL-Ee-20Z" secondAttribute="leading" id="k1v-PB-59o"/>
+                        <constraint firstAttribute="trailing" secondItem="iY4-li-NA8" secondAttribute="trailing" constant="20" id="o63-C3-DJU"/>
+                        <constraint firstItem="iY4-li-NA8" firstAttribute="top" secondItem="fQ6-52-VVw" secondAttribute="top" id="r3C-LT-Xvp"/>
+                        <constraint firstAttribute="height" constant="100" id="sXG-9Q-kYy"/>
+                        <constraint firstItem="iY4-li-NA8" firstAttribute="leading" secondItem="fQ6-52-VVw" secondAttribute="trailing" constant="10" id="vyt-a3-4nC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8z8-AA-9mz" secondAttribute="trailing" constant="15" id="2GM-aq-xH5"/>
+                <constraint firstItem="8z8-AA-9mz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="92U-Yf-3H2"/>
+                <constraint firstAttribute="trailing" secondItem="bfL-Ee-20Z" secondAttribute="trailing" id="JRe-zt-z8l"/>
+                <constraint firstItem="bfL-Ee-20Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mn7-mC-IhC"/>
+                <constraint firstItem="8z8-AA-9mz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="SCh-uk-0Ra"/>
+                <constraint firstAttribute="bottom" secondItem="bfL-Ee-20Z" secondAttribute="bottom" id="oax-WD-5lH"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="136.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_select" width="21" height="22"/>
+        <image name="icon_select_on" width="21" height="22"/>
+    </resources>
+</document>

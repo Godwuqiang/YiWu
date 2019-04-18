@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DTFAuthFailVC">
+            <connections>
+                <outlet property="tipsLabel" destination="oU2-mq-u7o" id="7ZF-f6-ZnM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_fail" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-Ui-7Ex">
+                    <rect key="frame" x="157" y="120" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ATP-W3-Zqv"/>
+                        <constraint firstAttribute="height" constant="60" id="ENg-BF-Ose"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实人认证失败!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mex-0N-aGg">
+                    <rect key="frame" x="10" y="195" width="355" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fx9-0E-Z1X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="失败原因：相似度较低" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-J3-W1J">
+                    <rect key="frame" x="10" y="226" width="355" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当天还剩4次认证机会，请重新认证！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU2-mq-u7o">
+                    <rect key="frame" x="10" y="250.5" width="355" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiT-0a-Fhz">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.71764705880000002" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="tzC-pc-Q3Z"/>
+                    </constraints>
+                    <state key="normal" title="重新认证"/>
+                    <connections>
+                        <action selector="reAuthButtonClick:" destination="-1" eventType="touchUpInside" id="xui-V6-T8M"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jx4-J3-W1J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6D8-du-r51"/>
+                <constraint firstAttribute="bottom" secondItem="TiT-0a-Fhz" secondAttribute="bottom" id="6Oh-nm-aO7"/>
+                <constraint firstItem="TiT-0a-Fhz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dk7-TL-4GJ"/>
+                <constraint firstAttribute="trailing" secondItem="TiT-0a-Fhz" secondAttribute="trailing" id="F0b-EW-S8v"/>
+                <constraint firstItem="oU2-mq-u7o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GHJ-9y-d8i"/>
+                <constraint firstAttribute="trailing" secondItem="Jx4-J3-W1J" secondAttribute="trailing" constant="10" id="PMj-z0-DPV"/>
+                <constraint firstItem="gsf-Ui-7Ex" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S3g-CB-nu4"/>
+                <constraint firstItem="mex-0N-aGg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="UGz-yn-7m3"/>
+                <constraint firstItem="Jx4-J3-W1J" firstAttribute="top" secondItem="mex-0N-aGg" secondAttribute="bottom" constant="10" id="W3h-WO-Ld4"/>
+                <constraint firstItem="Jx4-J3-W1J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WBh-DS-n0Q"/>
+                <constraint firstItem="mex-0N-aGg" firstAttribute="top" secondItem="gsf-Ui-7Ex" secondAttribute="bottom" constant="15" id="ZB9-40-jtq"/>
+                <constraint firstAttribute="trailing" secondItem="oU2-mq-u7o" secondAttribute="trailing" constant="10" id="euC-G5-9P1"/>
+                <constraint firstAttribute="trailing" secondItem="mex-0N-aGg" secondAttribute="trailing" constant="10" id="j7w-tf-Kk5"/>
+                <constraint firstItem="gsf-Ui-7Ex" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="jH5-Zj-Y7S"/>
+                <constraint firstItem="mex-0N-aGg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jTe-eI-6oG"/>
+                <constraint firstItem="oU2-mq-u7o" firstAttribute="top" secondItem="Jx4-J3-W1J" secondAttribute="bottom" constant="10" id="jll-15-9eJ"/>
+                <constraint firstItem="oU2-mq-u7o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="lCv-s1-Bnc"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_fail" width="52" height="52"/>
+    </resources>
+</document>

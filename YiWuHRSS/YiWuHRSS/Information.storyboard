@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--资讯界面-->
+        <scene sceneID="43x-Vg-cKG">
+            <objects>
+                <viewController storyboardIdentifier="InfoVC" id="FDB-MH-c32" userLabel="资讯界面" customClass="InfoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Xt-0e-oSq"/>
+                        <viewControllerLayoutGuide type="bottom" id="YEM-zp-TG4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UNL-jz-4N3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3O4-rK-Oo2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alr-4U-qs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.5" y="457.5"/>
+        </scene>
+        <!--资讯-->
+        <scene sceneID="IBp-BK-1Ta">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" id="kVw-4z-evT" customClass="DTFNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="资讯" image="icon_news" selectedImage="icon_news_on" id="vWl-LM-C0S"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eTZ-qZ-mRX">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FDB-MH-c32" kind="relationship" relationship="rootViewController" id="Nbn-JP-4Z6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QsD-wm-WeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="458"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_news" width="24" height="24"/>
+        <image name="icon_news_on" width="24" height="24"/>
+    </resources>
+</document>

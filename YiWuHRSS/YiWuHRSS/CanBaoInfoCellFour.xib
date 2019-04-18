@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CanBaoInfoCellFour" rowHeight="60" id="KGk-i7-Jjw" customClass="CanBaoInfoCellFour">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tab_mid" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-wK-j5y">
+                        <rect key="frame" x="15" y="0.0" width="291" height="59"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医疗保险" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-cd-cvb">
+                        <rect key="frame" x="30" y="10" width="57.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jYb-TX-tW2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="义乌纵贯服饰有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-aH-CCp">
+                        <rect key="frame" x="30" y="36" width="123" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="N5S-Je-aRE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_canbao" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-Ps-Xq2">
+                        <rect key="frame" x="233" y="10" width="58" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="lmo-54-DTt"/>
+                            <constraint firstAttribute="height" constant="18" id="yUl-Rw-rbc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="6Xx-wK-j5y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="67h-ua-4X1"/>
+                    <constraint firstAttribute="trailing" secondItem="6Xx-wK-j5y" secondAttribute="trailing" constant="15" id="F7s-Kt-aQF"/>
+                    <constraint firstItem="cLI-cd-cvb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Jju-Of-OSn"/>
+                    <constraint firstItem="h1o-Ps-Xq2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Kgq-eQ-pBx"/>
+                    <constraint firstItem="gRI-aH-CCp" firstAttribute="top" secondItem="cLI-cd-cvb" secondAttribute="bottom" constant="6" id="RMe-wZ-tVt"/>
+                    <constraint firstAttribute="bottom" secondItem="6Xx-wK-j5y" secondAttribute="bottom" id="VaL-gR-ups"/>
+                    <constraint firstItem="cLI-cd-cvb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="a3G-eM-wAB"/>
+                    <constraint firstItem="6Xx-wK-j5y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="glh-Eq-JAC"/>
+                    <constraint firstItem="gRI-aH-CCp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="oFl-sh-51u"/>
+                    <constraint firstAttribute="trailing" secondItem="h1o-Ps-Xq2" secondAttribute="trailing" constant="30" id="rWd-YT-XDC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BgImg" destination="6Xx-wK-j5y" id="iM8-xM-9bF"/>
+                <outlet property="IsJF" destination="h1o-Ps-Xq2" id="fxf-PQ-mzR"/>
+                <outlet property="company" destination="gRI-aH-CCp" id="J3q-ED-xRj"/>
+                <outlet property="type" destination="cLI-cd-cvb" id="yHG-F9-16X"/>
+            </connections>
+            <point key="canvasLocation" x="271.5" y="177"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_tab_mid" width="345" height="88"/>
+        <image name="icon_canbao" width="56" height="18"/>
+    </resources>
+</document>

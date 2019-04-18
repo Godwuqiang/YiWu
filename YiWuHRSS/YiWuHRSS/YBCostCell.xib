@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YBCostCell" rowHeight="60" id="KGk-i7-Jjw" customClass="YBCostCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tab_mid" translatesAutoresizingMaskIntoConstraints="NO" id="aY7-2r-KQF">
+                        <rect key="frame" x="15" y="0.0" width="340" height="59"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-07-15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2h-vO-b2I">
+                        <rect key="frame" x="30" y="13" width="86" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="V7t-fe-kE5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="义乌市中心医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVJ-8e-gja">
+                        <rect key="frame" x="30" y="38" width="265" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="vgx-Ja-Nfb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-gR-PAT">
+                        <rect key="frame" x="306" y="13" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Akh-4K-LQs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_clinic" translatesAutoresizingMaskIntoConstraints="NO" id="ML6-0z-qM9">
+                        <rect key="frame" x="305" y="35" width="35" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1Ap-Te-RBH"/>
+                            <constraint firstAttribute="width" constant="35" id="E4N-6B-AhQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="TbN-gR-PAT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="0rd-OJ-mxR"/>
+                    <constraint firstAttribute="bottom" secondItem="aY7-2r-KQF" secondAttribute="bottom" id="3pR-ox-hP7"/>
+                    <constraint firstItem="ML6-0z-qM9" firstAttribute="top" secondItem="TbN-gR-PAT" secondAttribute="bottom" constant="6" id="8UX-8O-rZa"/>
+                    <constraint firstItem="H2h-vO-b2I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="91B-d6-b9Y"/>
+                    <constraint firstItem="aY7-2r-KQF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DFa-Y4-hCH"/>
+                    <constraint firstItem="oVJ-8e-gja" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="QqE-H6-KLS"/>
+                    <constraint firstItem="ML6-0z-qM9" firstAttribute="leading" secondItem="oVJ-8e-gja" secondAttribute="trailing" constant="10" id="dXd-Sf-1er"/>
+                    <constraint firstAttribute="trailing" secondItem="aY7-2r-KQF" secondAttribute="trailing" constant="15" id="fDh-Wv-no4"/>
+                    <constraint firstItem="H2h-vO-b2I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="nT8-GB-Imj"/>
+                    <constraint firstAttribute="trailing" secondItem="ML6-0z-qM9" secondAttribute="trailing" constant="30" id="rEw-iY-1bb"/>
+                    <constraint firstAttribute="trailing" secondItem="TbN-gR-PAT" secondAttribute="trailing" constant="30" id="ugW-hY-gZG"/>
+                    <constraint firstItem="aY7-2r-KQF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yOd-Ch-cba"/>
+                    <constraint firstItem="oVJ-8e-gja" firstAttribute="top" secondItem="H2h-vO-b2I" secondAttribute="bottom" constant="7" id="zTw-Xb-xwe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BgImg" destination="aY7-2r-KQF" id="a2w-zx-YYJ"/>
+                <outlet property="Cost" destination="TbN-gR-PAT" id="xhB-ej-ntm"/>
+                <outlet property="Hospital" destination="oVJ-8e-gja" id="csm-aY-Qxt"/>
+                <outlet property="Time" destination="H2h-vO-b2I" id="sdO-23-6aJ"/>
+                <outlet property="type" destination="ML6-0z-qM9" id="jLm-k9-fsk"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="245"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_tab_mid" width="345" height="88"/>
+        <image name="icon_clinic" width="27" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,26 @@
+//
+//  HospitalListVC.h
+//  NingBoHRSS
+//
+//  Created by 许芳芳 on 16/9/7.
+//  Copyright © 2016年 许芳芳. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface HospitalListVC : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *listtableview;
+@property (weak, nonatomic) IBOutlet UITextField *keywords;
+@property (weak, nonatomic) IBOutlet UIImageView *searchImg;
+@property (weak, nonatomic) IBOutlet UIImageView *searchBg;
+
+@property (weak, nonatomic) IBOutlet UIView *contentview;
+@property (weak, nonatomic) IBOutlet UIImageView *TSbg;
+@property (weak, nonatomic) IBOutlet UILabel *TSlb;
+@property (weak, nonatomic) IBOutlet UIButton *TSbtn;
+
+@property (weak, nonatomic) IBOutlet UIView *Coverview;     // 遮盖层
+
+- (IBAction)Search:(id)sender;
+
+@end

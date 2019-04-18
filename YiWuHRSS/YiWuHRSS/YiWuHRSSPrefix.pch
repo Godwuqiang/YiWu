@@ -1,0 +1,208 @@
+//
+//  YiWuHRSSPrefix.pch
+//  YiWuHRSS
+//
+//  Created by 许芳芳 on 16/10/11.
+//  Copyright © 2016年 许芳芳. All rights reserved.
+//
+
+#ifndef YiWuHRSSPrefix_pch
+#define YiWuHRSSPrefix_pch
+
+// Screen Height
+#define SCREEN_HEIGHT UIScreen.mainScreen.bounds.size.height
+// Screen Width
+#define SCREEN_WIDTH UIScreen.mainScreen.bounds.size.width
+/** 状态栏高度 */
+#define STATUS_BAR_HEIGHT           (20)
+/** 导航栏高度 */
+#define NAVGATION_BAR_HEIGHT        (44)
+/** Tabbar高度 */
+#define TAB_BAR_HEIGHT              (49)
+
+//屏幕宽高
+#define UI_SCREEN_WIDTH   ([[UIScreen mainScreen] bounds].size.width)
+#define UI_SCREEN_HEIGHT  ([[UIScreen mainScreen] bounds].size.height)
+
+//主题颜色
+#define kThemeColor [UIColor colorWithHex:0xfdb731]
+#define kFontColor_Gray   [UIColor colorWithHex:0x666666]     //灰
+
+//屏幕宽度相对iPhone6屏幕宽度的比例
+#define kWidth_Scale_375    ([UIScreen mainScreen].bounds.size.width/375.0f)
+
+#define kHeight_Scale_667    (UI_SCREEN_HEIGHT/667.0f)
+//屏幕宽度相对iPhone6屏幕宽度的比例计算函数
+#define kRatio_Scale_375(Scale) (kWidth_Scale_375 * Scale)
+
+#define kRatio_Scale_667(Scale) (kHeight_Scale_667 * Scale)
+
+#define kDefaultVOffset (SCREEN_HEIGHT == 812.0 ? 22 : 0) //默认偏移
+#define kSafeAreaTopHeight (SCREEN_HEIGHT == 812.0 ? 88 : 64) //距离顶部高度
+#define kBottomOffetForAreaHeight (SCREEN_HEIGHT == 812.0 ? 34 : 0) //底部偏移
+
+#define kIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//字体设置
+//#define kFont_Name_HeiTi @"Heiti SC"
+//#define FONT(x) [UIFont fontWithName:kFont_Name_HeiTi size:x]
+//#define FONT(x) [UIFont systemFontOfSize:x]
+#define Font_Scale_375(a)  [UIFont systemFontOfSize:kRatio_Scale_375(a)]
+
+// 辅助定义弱引用（用于block）
+#define WEAK_SELF(weakSelf)         __weak __typeof(&*self)weakSelf = self;
+
+// 隐藏返回键带的title
+#define HIDE_BACK_TITLE             [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+
+// 使用DMLog打印日志（在调试模式下打印，在非调试模式下不打印）
+#ifdef DEBUG
+#define DMLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#else
+#define DMLog(...) do { } while (0)
+#endif
+
+#define AESEncryptKey       @"Yi17wu_EnPun_k88"                     //AES加密的key
+
+#define JPUSH_APPKEY       @"3cb64c6f5fd8b47efce0bdcd"
+/* 极光推送KEY 测试: 892ce454eb83e57fe8f6ff2d 生产:3cb64c6f5fd8b47efce0bdcd 内测环境:0ac2279ad85ef15df282f3ea */
+
+//生产环境
+//#define HOST_TEST          @"https://app.ywrl.gov.cn:8553/ywcitzencard"                           // APP根地址
+//#define HOST               @"https://app.ywrl.gov.cn:8554/ywresources"                            // 合肥H5
+//#define HOST_NAME          @"https://app.ywrl.gov.cn:7077/nameAuth/uploadImages.do"               // 实人认证上传图片接口地址
+//#define H5_HOST            @"https://ywapp.dabay.cn/h5/"                                          // 杭州H5相对地址
+//#define YKF_HOST           @"https://ywapp.dabay.cn/yw/"                                          // 医快付云平台
+//#define PNG_HOST           @"https://app.ywrl.gov.cn:8554/news_image/"                            // 轮播图片
+
+
+
+//内测环境
+//#define HOST_TEST          @"https://app.ywrl.gov.cn:8553/ywcitzencard-nc"                       // APP根地址
+//#define HOST               @"https://app.ywrl.gov.cn:8554/ywresources-nc"                        // 合肥H5
+
+
+
+
+//测试环境
+#define HOST_TEST          @"http://122.226.66.214:7780/ywcitzencard"                             // APP根地址
+#define HOST               @"http://122.226.66.214:7780/ywresources"                              // 合肥H5
+#define HOST_NAME          @"https://app.ywrl.gov.cn:8088/nameAuth/nameAuth/uploadImages.do"      // 实人认证上传图片接口地址
+#define H5_HOST            @"http://114.215.29.145:8081/h5/"                                      // 杭州H5相对地址
+#define YKF_HOST           @"http://114.215.29.145:8081/yw/"                                      // 医快付云平台
+#define PNG_HOST           @"http://122.226.66.214:7780/ywresources/news_image/"                  // 轮播图片
+
+
+
+
+
+#define loginErrorCount       @"loginErrorCount"  //登录失败计数
+#define loginErrorTime        @"loginErrorTime"  //登录失败计数
+
+#define YW_ALIPAY_TRADE_NUM   @"yw_alipay_trade_num"  // 支付宝支付流水
+#define YW_ALIPAY_FAILED_REASON   @"yw_alipay_failed_reason"  // 支付宝失败原因
+
+#define   desKey              @"hangzhoudaibaicc" //系统加密的 KEY
+#define IS_INTROVIEWREAD      @"isIntroViewRead" // 是否阅读引导页
+#define REGISTRATION_ID       @"registration_id" // 极光id
+#define JPUSH_ALIAS           @"jpush_alias"    // 极光推送别名
+
+#define CACHE_SHBZH           @"cache_shbzh"    //登录输入框中缓存的身份证号
+
+#define ALLOW_LOGIN           @"allowlogin"      // 判断是否允许登录
+
+#define LOGIN_STUTAS          @"Login_stutas"   //判断是否登录 boolean
+#define LOGIN_ID              @"id"            // 用户id
+#define LOGIN_SET_PAY_PSW     @"login_pay_psw_set"    // 是否设置过登录密码
+
+#define LOGIN_NAME            @"name"          //用户名
+#define LOGIN_ID_NUMBER       @"id_number"     //身份证号 - 2.3版本新增主键
+#define LOGIN_USER_PSD        @"password"      // 用户账号
+#define LOGIN_CARD_TYPE       @"cardType"      // 市民卡类型
+
+#define LOGIN_CARD_NUM        @"cardno"        // 社保卡卡号
+#define LOGIN_SHBZH           @"shbzh"         // 社会保障号
+#define LOGIN_BANK            @"bank"          // 绑定银行
+#define LOGIN_BANK_CARD       @"bankCard"      // 绑定银行卡号
+#define LOGIN_ISHaveCard      @"isHaveCard"    // 绑定银行卡号
+
+#define LOGIN_USER_PNG        @"userPng"       // 用户头像
+#define LOGIN_CIT_CARDNUM     @"citCardNum"    // 市民卡卡号
+#define LOGIN_CARD_MOBILE     @"cardMobile"    // 手机号
+#define LOGIN_BANK_MOBILE     @"bankMobile"    // 绑定银行卡手机号
+#define LOGIN_APP_MOBILE      @"appMobile"     // app手机号
+
+#define LOGIN_CARD_STATUS     @"cardStatus"    // 卡状态
+#define LOGIN_DZYX            @"dzyx"          // 电子邮箱
+#define LOGIN_YJDZ            @"yjdz"          // 邮寄地址
+#define LOGIN_UPDATE_TIME     @"updateTime"    // 更新时间
+
+#define LOGIN_CREATE_TIME     @"createTime"    // 创建时间
+#define LOGIN_ACCESS_TOKEN    @"access_token"  // access_token
+#define LOGIN_BANK_CODE       @"bankCode"      // 银行代码 
+#define LOGIN_YDZF_STATUS     @"ydzf_status"   // 移动支付状态
+
+#define LOGIN_SRRZ_STATUS     @"srrz_status"   // 实人认证状态
+#define LOGIN_BANKZF_STATUS   @"bankzf_status" // 银行卡支付状态
+#define LOGIN_GENDER          @"gender"        // 性别
+#define LOGIN_BIRTHDATE       @"birthDate"     // 生日
+
+#define CURRENT_LAT           @"current_lat"   // 定位当前位置
+#define CURRENT_LON           @"current_lon"   // 定位当前位置
+#define PERSONAL_UNREADNUM    @"personUnReadNum"  // 我的私信未读条数
+#define NEWS_UNREADNUM        @"newsUnReadNum"   // 新闻通知未读条数
+
+#define ENVIROMENT_DATA       @"environmentLabel" // 环境标识，服务端返回的
+
+
+#define PROVICE_COMPONENT_INDEX     @"provice_component_index"  // 记录选择的省index
+#define CITY_COMPONENT_INDEX        @"city_component_index"     // 记录选择的市index
+#define AREA_COMPONENT_INDEX        @"area_component_index"     // 记录选择的区index
+
+//电子社保卡相关数据缓存
+#define DZSBK_BANK_NAME             @"dzsbk_bank_name"          //电子社保卡-银行名称
+#define DZSBK_BANK_CODE             @"dzsbk_bank_code"          //电子社保卡-银行编码
+#define DZSBK_BANK_CARD             @"dzsbk_bank_card"          //电子社保卡-银行卡号
+#define DZSBK_INSURE_CARD_NUM       @"dzsbk_insure_card_num"    //电子社保卡-社保卡号
+#define DZSBK_INSURE_CARD_TYPE      @"dzsbk_insure_card_type"   //电子社保卡-社保卡类型
+#define DZSBK_ID_CARD               @"dzsbk_id_card"            //电子社保卡-身份证号
+#define DZSBK_USER_NAME             @"dzsbk_user_name"          //电子社保卡-用户姓名
+#define DZSBK_USER_SEX              @"dzsbk_user_sex"           //电子社保卡-用户性别
+
+
+#import "UIColor+Util.h"
+#import "NSString+category.h"
+#import "NSDictionary+EPExtension.h"
+#import "Masonry.h"
+#import "UIViewExt.h"
+#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "Util.h"
+#import "NSData+Base64.h"
+#import "CoreArchive.h"
+#import "PublicDefine.h"
+#import "AFNetworkReachabilityManager.h"
+#import "Reachability.h"
+#import "YW_DZSBK_SDK.h"
+#import "AESCipher.h"
+#import "DTFNavigationController.h"
+#import "HttpHelper.h"
+#import "MJExtension.h"
+#import "YWManager.h"
+#import "YWLoginVC.h"
+#import "EPTipsView.h"
+#import "EPPickerView.h"
+#import "AlipaySDK.h"
+
+//#import "MJExtension.h"
+
+/**
+ *  高德地图
+ */
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+
+
+#endif /* YiWuHRSSPrefix_pch */

@@ -1,0 +1,6 @@
+framework module ZjEsscSDK {
+  umbrella header "ZjEsscSDK.h"
+
+  export *
+  module * { export * }
+}

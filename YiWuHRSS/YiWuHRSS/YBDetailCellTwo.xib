@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YBDetailCellTwo" rowHeight="35" id="KGk-i7-Jjw" customClass="YBDetailCellTwo">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tab1" translatesAutoresizingMaskIntoConstraints="NO" id="iZd-o8-ejj">
+                        <rect key="frame" x="15" y="0.0" width="290" height="34"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目/规格类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pec-fP-AP9">
+                        <rect key="frame" x="30" y="12" width="66" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="EVj-Or-Ygv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额(元)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APR-ZW-w7d">
+                        <rect key="frame" x="244" y="12" width="46" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="8b4-ML-Dgf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_dotline" translatesAutoresizingMaskIntoConstraints="NO" id="oSW-Gi-34e">
+                        <rect key="frame" x="15" y="33" width="290" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="s8d-cp-6yJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oSW-Gi-34e" secondAttribute="trailing" constant="15" id="8Qp-XS-Kp3"/>
+                    <constraint firstItem="iZd-o8-ejj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8ZO-wW-XV4"/>
+                    <constraint firstAttribute="trailing" secondItem="iZd-o8-ejj" secondAttribute="trailing" constant="15" id="Fee-Gt-FWe"/>
+                    <constraint firstAttribute="trailing" secondItem="APR-ZW-w7d" secondAttribute="trailing" constant="30" id="LH7-Yu-TWr"/>
+                    <constraint firstAttribute="bottom" secondItem="oSW-Gi-34e" secondAttribute="bottom" id="MHn-yE-Tri"/>
+                    <constraint firstItem="Pec-fP-AP9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="N4o-MV-rda"/>
+                    <constraint firstItem="APR-ZW-w7d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="SmN-0G-4NN"/>
+                    <constraint firstItem="oSW-Gi-34e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="X2l-9p-EDA"/>
+                    <constraint firstItem="Pec-fP-AP9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="efW-ii-EbK"/>
+                    <constraint firstItem="iZd-o8-ejj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="t46-Ro-PIS"/>
+                    <constraint firstAttribute="bottom" secondItem="iZd-o8-ejj" secondAttribute="bottom" id="vz8-wH-J16"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="268" y="190.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_dotline" width="345" height="2"/>
+        <image name="bg_tab1" width="345" height="138"/>
+    </resources>
+</document>

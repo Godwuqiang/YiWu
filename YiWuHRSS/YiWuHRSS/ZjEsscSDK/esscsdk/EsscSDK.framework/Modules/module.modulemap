@@ -1,0 +1,6 @@
+framework module EsscSDK {
+  umbrella header "EsscSDK.h"
+
+  export *
+  module * { export * }
+}
